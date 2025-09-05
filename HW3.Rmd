@@ -1,6 +1,8 @@
 ---
 title: "HW 5"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r global_options, include=FALSE}
@@ -20,7 +22,6 @@ knitr::opts_chunk$set(echo = TRUE, eval = TRUE,
 
 **NOTE**: You must use version 1.3.0 or higher of the `tidyr` package for this homework. If you are not sure what version you have, you can run `install.packages("tidyr")` in the console window and R will install the latest version of the package.
 
-------------------------------------------------------------------------
 
 ### Question 1: (1 pt)
 
@@ -36,7 +37,6 @@ head(world_bank_pop)
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 2: (1 pt)
 
@@ -49,7 +49,6 @@ Using `tidyverse` functions on `world_bank_pop`, count how many distinct countri
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 3: (2 pts)
 
@@ -72,7 +71,6 @@ How many rows are there per country? Why does it make sense?
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 4: (3 pts)
 
@@ -92,7 +90,6 @@ Using `tidyverse` functions, find the ratio of urban growth compared to the popu
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 5: (1 pt)
 
@@ -105,7 +102,6 @@ In `myworld2`, which country code had the highest population growth in 2017? *Hi
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 6: (1 pt)
 
@@ -133,7 +129,6 @@ How many countries are there in `mycodes`?
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 7: (1 pt)
 
@@ -153,7 +148,6 @@ How many rows are there in this new dataset `myeurope`? What does each row repre
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 8: (2 pts)
 
@@ -166,7 +160,6 @@ Using `tidyverse` functions on `myeurope`, only keep information for the populat
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 9: (1 pt)
 
@@ -180,7 +173,6 @@ mapWorld <- map_data("world") |>
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 10: (2 pts)
 
@@ -200,7 +192,6 @@ Some countries such as United Kingdom did not have a match. Why do you think thi
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 11: (1 pt)
 
@@ -213,13 +204,12 @@ Consider the `myeurope` dataset. Recode some of the country names so that the co
 
 ```
 
-------------------------------------------------------------------------
 
 ### Question 12: (2 pts)
 
 Let's visualize how population growth varies across European countries in 2017 with a map. Use the R code provided below. Add a comment after each `#` to explain what each component of this code does. *Note: it would be a good idea to run the code piece by piece to see what each layer adds to the plot.*
 
-```{r}
+```{r eval=FALSE}
 # Build a map!
 mymap |>
   # 
@@ -239,15 +229,12 @@ Which country had the highest population growth in Europe in 2017? *Hint: it's v
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
-
 ### Formatting: (2 pts)
 
 Comment your code, write full sentences, knit your file, and select all appropriate pages in Gradescope for each question!
 
-------------------------------------------------------------------------
 
 ```{r, echo=F}
 ## DO NOT DELETE THIS BLOCK!
-Sys.info()
+tibble(Sys.info())
 ```
