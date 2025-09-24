@@ -1,5 +1,5 @@
 ---
-title: "HW 5"
+title: "HW 3"
 output:
   pdf_document: default
   html_document: default
@@ -151,7 +151,7 @@ How many rows are there in this new dataset `myeurope`? What does each row repre
 
 ### Question 8: (2 pts)
 
-Using `tidyverse` functions on `myeurope`, only keep information for the population growth in 2017 then compare the population growth per country with `ggplot` using `geom_col()`. Use the `reorder()` function to order countries in order of population growth. Which country in Europe had the lowest population growth in 2017?
+Using `tidyverse` functions on `myeurope`, only keep information for the population growth in 2017 then compare the population growth per country with `ggplot` using `geom_col()`. Use the `fct_reorder()` function to order countries in order of population growth. Which country in Europe had the lowest population growth in 2017?
 
 ```{r}
 # your code goes below (make sure to edit comment)
